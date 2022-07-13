@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+
+
+.title{
+  h1{
+    font-size: 4em;
+    align-self: center;
+    width: 100%;
+  }
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  
+}
+
+.movie-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 2em;
+  .poster-details{
+    flex-direction: column;
+    align-content: center;
+    .icon{
+      padding: 0.155em;
+    }
+  }
+  .video-responsive {
+    overflow: hidden;
+    flex-grow: 4;
+    align-self: center;
+    flex-basis: auto;
+    align-items: stretch;
+  }
+
+  .video-responsive {
+    aspect-ratio: 16/9;
+    width: 100%;
+    min-height: 484px;
+    max-height: 500px;
+    max-width: 855px;
+  }
+  .img-container {
+    img {
+      max-width: 500px;
+      max-height: 700px;
+    }
+    
+  }
+  .divider {
+    color: #ffffff;
+    background-color: #ffffff;
+    height: 5px;
+
+  }
+  .description{
+    max-width: 855px;
+    padding-top: 1em;
+    padding-left: 2em;
+    letter-spacing: 2px;
+    margin: 0;
+    align-self: flex-end;
+  }
+  .image-description-container{
+    width: 48%;
+    align-items: flex-start;
+  }
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin-left: 7%;
+  margin-right: 7%;
+  &:hover{
+    cursor: pointer;
+  }
+  img{
+    width:250px;
+    height:250px;
+  }
+ }
+ .wrapper section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
+ }
+ .wrapper section .item {
+  padding: 0 2px;
+  transition: 250ms all;
+ }
+ .wrapper section .item:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
+ }
+ .wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+ }
+ .wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+ }
+ .wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+ }
+ @media only screen and (max-width: 600px) {
+  a.arrow__btn {
+  display: none;
+  }
+ }

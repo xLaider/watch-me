@@ -1,0 +1,25 @@
+@import "../views/homepage/HomePage";
+@import "../views/login/LoginView";
+@import "../components/navbar/NavBar";
+@import "../views/movie/MovieView";
+
+body {
+	background: #048;
+	background: -webkit-linear-gradient(left top, #1D2D44, #3E5C76);
+	background: -moz-linear-gradient(bottom right, #1D2D44, #3E5C76);
+	background: linear-gradient(to bottom right, #1D2D44, #3E5C76);
+	background-attachment: fixed;
+	color: #fff;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 140%;
+	margin: 0;
+	height: 100%;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+html {
+	scroll-behavior: smooth;
+}
